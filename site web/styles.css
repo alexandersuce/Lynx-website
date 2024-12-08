@@ -1,0 +1,88 @@
+body {
+    background-color: #2d2d2d;
+    overflow: hidden;
+    position: relative;
+    left: -20px;
+    top: -10px;
+}
+
+header {
+    background-color: rgb(34, 12, 56);
+    width: 10000px;
+    height: 100px;
+}
+
+.logo {
+    position: relative;
+    width: 50px;
+    top: 20px;
+    left: 30px;
+}
+
+h1 {
+    position: relative;
+    color: white;
+    font-family: fantasy;
+    right: -90px;
+    top: -47px;
+}
+
+a {
+    position: relative;
+    right: -480px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    top: -85px;
+    margin-right: 60px;
+}
+
+a:hover {
+    text-decoration: none;
+
+}
+
+.container {
+    text-align: center;
+}
+
+.logo-div {
+    position: relative;
+    top: 20px;
+    width: 120px;
+}
+
+.title {
+    position: relative;
+    top: 5px;
+    right: -20px;
+    font-size: 50px;
+}
+
+.download-btn {
+   position: relative;
+   right: -100px;
+   width: 400px;
+   height: 60px;
+   border-radius: 50px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 20px;
+   background-color: #17d3d5;
+   color: white;
+   border: none;
+}
+
+.download-btn:hover {
+    background-color: #129395;
+}
+
+.downloadCode-Btn{
+    position: relative;
+    right: 170px;
+    color: #17d3d5;
+    top: 80px;
+}
+
+.downloadCode-Btn:hover{
+   text-decoration: none;
+}
