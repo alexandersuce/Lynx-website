@@ -14,3 +14,10 @@ document.querySelector('a[href*="gmail.com"]').addEventListener('click', functio
     event.preventDefault(); // Empêche l'ouverture d'une page par défaut
     window.location.href = 'mailto:luccabondi@gmail.com';
 });
+
+document.addEventListener("scroll", () => {
+    const strip = document.querySelector(".decorative-strip::before");
+    const scrollY = window.scrollY;
+    strip.style.animationPlayState = scrollY > 0 ? "running" : "paused";
+});
+
