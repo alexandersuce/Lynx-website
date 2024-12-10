@@ -1,6 +1,6 @@
 body {
     background-color: #2d2d2d;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
     left: -20px;
     top: -10px;
@@ -86,3 +86,76 @@ a:hover {
 .downloadCode-Btn:hover{
    text-decoration: none;
 }
+/* Bande décorative */
+.decorative-strip {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(90deg, #129395, #17d3d5);
+    position: relative;
+    overflow: hidden;
+}
+
+.decorative-strip::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: inherit;
+    transform: translateX(0);
+    animation: scroll-strip 10s linear infinite;
+}
+
+@keyframes scroll-strip {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Section projet */
+.project-info {
+    position: relative;
+    top: 50px;
+    background-color: #1d1d1d;
+    color: #17d3d5;
+    padding: 20px;
+    margin: 60px auto 20px; /* Ajusté pour que tout soit visible */
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.2);
+    text-align: center;
+}
+
+.project-info h2 {
+    font-size: 30px;
+    font-family: fantasy;
+    margin-bottom: 15px;
+}
+
+.project-info p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.developer-btn {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: #17d3d5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.developer-btn:hover {
+    background: linear-gradient(90deg, #129395, #17d3d5);
+    box-shadow: 0 5px 15px rgba(23, 211, 213, 0.5);
+}
+
